@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 h1:focus {
     outline: none;
 }
@@ -26,4 +31,21 @@ h1:focus {
 
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tab {
+    width: 15% !important;
+}
+
+.socials {
+    display: flex;
+    width: 25% !important;
+    justify-content: flex-end;
 }

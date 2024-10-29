@@ -1,6 +1,18 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
+@* Required *@
+<MudThemeProvider />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
+<body>
+    <NavBar/>
+    @Body
+</body>
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.
