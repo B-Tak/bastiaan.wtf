@@ -1,14 +1,15 @@
 ﻿<MudGrid Spacing="0">
-    <MudItem xs="4"></MudItem>
-    <MudItem xs="4">
-        <MudStack Spacing="0">
-            <MudLink Class="nav-tab" Href="/"><MudIcon Icon="@Icons.Material.Filled.Face"/> About me</MudLink>
-            <MudLink Class="nav-tab" Href="/Projects"><MudIcon Icon="@Icons.Material.Filled.Folder"/> Projects</MudLink>
+    <!-- Adjust MudItem widths based on screen size -->
+    <MudItem xs="12" sm="3"></MudItem>
+    <MudItem xs="12" sm="6">
+        <MudStack Class="nav-bar py-2" Row Spacing="1">
+            <MudLink Class="nav-tab" Href="/"><MudIcon Icon="@Icons.Material.Filled.Face" /> About me</MudLink>
+            <MudLink Class="nav-tab" Href="/Projects"><MudIcon Icon="@Icons.Material.Filled.Folder" /> Projects</MudLink>
         </MudStack>
     </MudItem>
-    <MudItem xs="4">
-        <MudStack Spacing="0" Class="socials">
-            <MudLink Href="https://github.com/B-Tak"><MudIcon Icon="@Icons.Custom.Brands.GitHub"/></MudLink>
+    <MudItem xs="12" sm="3">
+        <MudStack Row Spacing="0" Class="socials py-2 pr-2">
+            <MudLink Href="https://github.com/B-Tak"><MudIcon Icon="@Icons.Custom.Brands.GitHub" /></MudLink>
         </MudStack>
     </MudItem>
 </MudGrid>

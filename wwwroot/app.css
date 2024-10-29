@@ -33,19 +33,51 @@ h1:focus {
     border-color: #929292;
 }
 
+/* General background color */
+.body-class {
+    background-color: #1A1D24;
+}
+
+/* Center navbar links and set default spacing */
 .nav-bar {
-    position: fixed;
-    top: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 1%;
 }
 
+/* Navbar tab link styles */
 .nav-tab {
-    width: 15% !important;
+    color: #c1c2c6 !important;
+    padding: 0 8px; /* More flexible padding */
 }
 
+/* Socials aligned to the end */
 .socials {
     display: flex;
-    width: 25% !important;
     justify-content: flex-end;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-tab {
+        width: auto !important;
+        font-size: 0.9em; /* Slightly smaller text */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Stack items vertically on very small screens */
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    /* Center the social icons as well */
+    .socials {
+        justify-content: center;
+    }
+
+    .nav-tab {
+        padding: 0; /* Adjust padding for narrow screens */
+    }
 }
