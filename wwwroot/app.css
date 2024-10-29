@@ -81,3 +81,11 @@ h1:focus {
         padding: 0; /* Adjust padding for narrow screens */
     }
 }
+
+.card-main {
+    background-color: #2A2F38;
+    border-radius: 5px;
+}
+.card-image {
+    width: 100% !important;
+}

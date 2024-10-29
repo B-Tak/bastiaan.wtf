@@ -2,10 +2,24 @@
 
 <PageTitle>Home</PageTitle>
 
-<MudStack Justify="Justify.Center">
-    <MudGrid>
-        <MudItem></MudItem>
+<MudStack>
+    <MudGrid Spacing="0" Justify="Justify.Center">
+        <MudItem xs="12" sm="8" md="6" lg="4" xl="3" Class="card-main p-2">
+            <MudGrid>
+                <MudItem xs="12" md="8">
+                    <MudText Color="Color.Primary" Typo="Typo.h4">Bastiaan Tak</MudText>
+                    <MudText Color="Color.Primary" Typo="Typo.body1">
+                        Hi I'm Bastiaan, I am an 18-year-old software developer currently studying in The Netherlands.
+                        I mostly focus on back-end C# web development.
+                    </MudText>
+                    <MudText Color="Color.Primary" Typo="Typo.body1">
+                        In my spare time, I play video games, code some hobby projects, and watch action movies :D.
+                    </MudText>
+                </MudItem>
+                <MudItem xs="12" md="4">
+                    <MudImage Class="card-image" ObjectFit="ObjectFit.Fill" Src="Images/gengar_gif.gif" />
+                </MudItem>
+            </MudGrid>
+        </MudItem>
     </MudGrid>
 </MudStack>
-
-Welcome to your new app.
